@@ -1,6 +1,6 @@
 <div class="component-panel" ng-controller="FbComponentPanelController">
     <uib-accordion close-others="oneAtATime">
-    <div ng-repeat="value in groups | orderBy:'order'">
+    <div ng-repeat="value in groups | orderBy:'order'" class="component-group">
       <div uib-accordion-group ng-class="value.class" is-open="value.openStatus" >
         <uib-accordion-heading>
             {{value.title | translate}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': value.openStatus, 'glyphicon-chevron-right': !value.openStatus}"></i>

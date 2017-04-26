@@ -1,5 +1,5 @@
 .form-builder{
-    margin-top: 55px;
+    margin-top: 65px;
 }
 
 .formBuilder .row{
@@ -22,8 +22,22 @@
     /* border-left: solid 1px #eee;
     border-right: solid 1px #eee;
     border-top: solid 1px #eee;
-    border-bottom: solid 1px #eee; */
-    min-height:800px;
+    border-bottom: solid 1px #eee;
+    min-height:800px;*/
+}
+
+.component-panel .panel-heading{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom: 0 !important;
+}
+
+.component-panel .panel-body{
+    padding: 9px;
+}
+
+.component-panel .component-group{
+    margin-bottom: 6px;
 }
 
 .component-panel .component-panel-group{
@@ -55,7 +69,7 @@
 }
 
 .content-panel{
-    min-height:800px;
+    min-height:500px;
     border-top: solid 1px #eee;
     border-right: solid 1px #eee;
     border-left: solid 1px #eee;
@@ -78,7 +92,7 @@
 }
 
 .property-panel{
-    min-height:800px;
+    min-height:500px;
     margin -top: 30px;
     border-top: solid 1px #eee;
     border-right: solid 1px #eee;
