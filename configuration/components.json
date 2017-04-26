@@ -1,0 +1,161 @@
+
+{
+    "propertyPackages" : [
+        {
+            "name":"component_idpackage",
+            "properties":[{
+                "id"            :   "componet_id",
+                "type"          :   "String",
+                "title"         :   "控件ID",
+                "value"         :   "",
+                "mode"          :   "uuid",
+                "description"   :   "控件唯一标识",
+                "category"      :   "basic"
+            }]
+        },
+        {
+            "name" : "component_namepackage",
+            "properties" : [ {
+              "id"              : "name",
+              "type"            : "String",
+              "title"           : "名称",
+              "value"           : "",
+              "description"     : "名称",
+              "category"      :   "basic"
+            } ]
+        },
+        {
+            "name" : "component_defaultvaluepackage",
+            "properties" : [ {
+              "id"              : "defaultvalue",
+              "type"            : "String",
+              "title"           : "默认值",
+              "value"           : "",
+              "description"     : "默认值",
+              "category"      :   "data"
+            } ]
+        },
+        {
+            "name" : "component_datasourcepackage", 
+            "properties" : [ {
+              "id"              : "datasource",
+              "type"            : "Select",
+              "title"           : "数据源",
+              "value"           : "",
+              "description"     : "数据源",
+              "category"      :   "data"
+            } ]
+        },
+        {
+            "name" : "component_labelpackage",
+            "properties" : [ {
+              "id"              : "label",
+              "type"            : "String",
+              "title"           : "标签",
+              "value"           : "",
+              "description"     : "标签",
+              "category"      :   "basic"
+            } ]
+        },
+        {
+            "name" : "component_descriptionpackage",
+            "properties" : [ {
+              "id"              : "desciption",
+              "type"            : "Text",
+              "title"           : "描述",
+              "value"           : "",
+              "description"     : "描述",
+              "category"      :   "basic"
+            } ]
+        },
+        {
+            "name" : "component_inputmaskpackage",
+            "properties" : [ {
+              "id"              : "inputmask",
+              "type"            : "String",
+              "title"           : "掩码",
+              "value"           : "",
+              "description"     : "掩码",
+              "category"      :   "basic"
+            } ]
+        },
+        {
+            "name" : "component_prefixpackage",
+            "properties" : [ {
+              "id"              : "prefix",
+              "type"            : "String",
+              "title"           : "前缀",
+              "value"           : "",
+              "description"     : "前缀",
+              "category"      :   "display"
+            } ]
+        },
+        {
+            "name" : "component_suffixpackage",
+            "properties" : [ {
+              "id"              : "inputmask",
+              "type"            : "String",
+              "title"           : "后缀",
+              "value"           : "",
+              "description"     : "后缀",
+              "category"      :   "display"
+            } ]
+        },
+        {
+            "name" : "component_customcsspackage",
+            "properties" : [ {
+              "id"              : "customcss",
+              "type"            : "String",
+              "title"           : "自定义样式",
+              "value"           : "",
+              "description"     : "自定义样式",
+              "category"      :   "display"
+            } ]
+        },
+        {
+            "name" : "component_requiredpackage",
+            "properties" : [ {
+              "id"              : "required",
+              "type"            : "Boolean",
+              "title"           : "必输",
+              "value"           : "false",
+              "description"     : "必输",
+              "category"        :  "validation"
+            } ]
+          },
+          {
+            "name" : "component_minlengthpackage",
+            "properties" : [ {
+              "id"              : "minlength",
+              "type"            : "String",
+              "title"           : "最小长度",
+              "value"           : "",
+              "description"     : "最小长度",
+              "category"        :  "validation"
+            } ]
+          },
+          {
+            "name" : "component_maxlengthpackage",
+            "properties" : [ {
+              "id"              : "maxlength",
+              "type"            : "String",
+              "title"           : "最大长度",
+              "value"           : "",
+              "description"     : "最大长度",
+              "category"        :  "validation"
+            } ]
+          },
+          {
+            "name" : "component_regularpackage",
+            "properties" : [ {
+              "id"              : "regular",
+              "type"            : "String",
+              "title"           : "正则表达式",
+              "value"           : "",
+              "description"     : "正则表达式",
+              "category"        :  "validation"
+            } ]
+          }
+    ],
+    "components" : []
+}

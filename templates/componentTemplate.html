@@ -1,0 +1,22 @@
+<div class="component-panel" ng-controller="FbComponentPanelController">
+    <uib-accordion close-others="oneAtATime">
+    <div ng-repeat="value in groups | orderBy:'order'">
+      <div uib-accordion-group ng-class="value.class" is-open="value.openStatus" >
+        <uib-accordion-heading>
+            {{value.title | translate}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': value.openStatus, 'glyphicon-chevron-right': !value.openStatus}"></i>
+        </uib-accordion-heading>
+        <div class="list-group">
+          <a class="list-group-item component-item" 
+             fb-hover-indicator href="#" 
+             ng-if="c.show" 
+             data-drag="true" 
+             jqyoui-draggable
+             ng-repeat="c in groupedComponents[value.type] | orderBy:'order'">
+            <i ng-class="c.icon?c.icon:'fa fa-cubes'" aria-hidden="true"></i>&nbsp; {{c.title | translate}}
+          </a>
+        </div>
+        <!-- content goes here -->    
+      </div>
+    </div>
+  </uib-accordion>
+</div>

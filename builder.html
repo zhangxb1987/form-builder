@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="formBuilder" ng-cloak>
+    <head>
+            <meta charset="utf-8"/>
+            <meta name="description" content="{{'HEADER.TITLE' | translate}}"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width"/>
+            <title>{{'HEADER.TITLE' | translate}}</title>
+            <link rel="stylesheet" type="text/css" href="libs/bootstrap_v3.3.7/css/bootstrap.css">
+            <link rel="stylesheet" type="text/css" href="css/form-common.css">
+            <link rel="stylesheet" type="text/css" href="css/form-builder.css">
+    </head>
+            
+    <body>
+        <div class="container-fluid">
+            <ng-include src="'templates/toolBarTemplate.html'"></ng-include>
+            <div class="row form-builder">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+                    <ng-include src="'templates/componentTemplate.html'"></ng-include>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-7">
+                    <ng-include src="'templates/contentTemplate.html'"></ng-include>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <ng-include src="'templates/propertyTemplate.html'"></ng-include>
+                </div>
+                <!--Console -->
+                <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                    <!--<ng-include src="'templates/consoleTemplate.html'"></ng-include>-->
+                    <fb-console-panel level="'debug'" theme="'dark'"></fb-console-panel>
+                </div>
+                <!--Console -->
+            </div>
+            
+        </div>
+
+        <!-- scripts -->
+        <script type="text/javascript" src="configuration/builder-config.js"></script>
+        <script type="text/javascript" src="libs/jquery_1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/jquery-ui_1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="libs/loadash_v4.17.4/loadash-core-min.js"></script>
+        <script type="text/javascript" src="libs/bootstrap_v3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="libs/angular_1.6.4/angular.js"></script>
+        <script type="text/javascript" src="libs/angular-ui-bootstrap/ui-bootstrap-tpls-2.5.0.min.js"></script>
+        <script type="text/javascript" src="libs/angular_1.6.4/angular-cookies.min.js"></script>
+        <script type="text/javascript" src="libs/angular_1.6.4/angular-resource.min.js"></script>
+        <script type="text/javascript" src="libs/angular_1.6.4/angular-sanitize.min.js"></script>
+        <script type="text/javascript" src="libs/angular_1.6.4/angular-route.min.js"></script>
+        <script type="text/javascript" src="libs/angular_1.6.4/angular-animate.min.js"></script>
+        <script type="text/javascript" src="libs/angular-translate_2.15.1/angular-translate.js"></script>
+        <script type="text/javascript" src="libs/angular-translate_2.15.1/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+        <script type="text/javascript" src="libs/angular-translate_2.15.1/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+        <script type="text/javascript" src="libs/angular-translate_2.15.1/angular-translate-loader-url/angular-translate-loader-url.js"></script>
+        <script type="text/javascript" src="libs/angular-dnd_1.0.13/angular-dragdrop.min.js"></script>
+        <script type="text/javascript" src="builder/constants/Utils.js"></script>
+        <script type="text/javascript" src="builder/app.js"></script>
+        <script type="text/javascript" src="builder/directives/CommonDirectives.js"></script>
+        <script type="text/javascript" src="builder/directives/ConsolePanelDirective.js"></script>
+        <script type="text/javascript" src="builder/services/EventBusService.js"></script>
+        <script type="text/javascript" src="builder/services/WrapLogService.js"></script>
+        <script type="text/javascript" src="components/formComponent.js"></script>
+        <script type="text/javascript" src="builder/controllers/ToolBarPanelController.js"></script>
+        <script type="text/javascript" src="builder/controllers/ComponentPanelController.js"></script>
+        <script type="text/javascript" src="builder/controllers/ContentPanelController.js"></script>
+        <script type="text/javascript" src="components/textFiled.js"></script>
+        <script type="text/javascript" src="components/number.js"></script>
+        <script type="text/javascript" src="components/phoneNumber.js"></script>
+        <script type="text/javascript" src="components/columns.js"></script>
+    </body>
+</html>
